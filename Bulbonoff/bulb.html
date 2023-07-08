@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>On and Off the Bulb</title>
+</head>
+<body>
+    <h1>Turn On and Off the Light</h1>
+    <button type="buttton" onclick="on()">Turn on the Light</button>
+    <img src="assets/images/pic_bulboff.gif" alt="" id="bulbonoff">
+    <button type="button" onclick="off()">Turn off the Light</button>
+
+    <script>
+        function on(){
+            document.getElementById("bulbonoff").src="assets/images/pic_bulbon.gif";
+        }
+        function off(){
+            document.getElementById("bulbonoff").src="assets/images/pic_bulboff.gif";
+        }
+    </script>
+</body>
+</html>
